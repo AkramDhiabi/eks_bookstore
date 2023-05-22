@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  DEVCLIENT:
+    Type: "AWS::DynamoDB::Table"
+    Properties:
+      TableName: "dev-clients"
+      AttributeDefinitions:
+        - AttributeName: "_id"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "_id"
+          KeyType: "HASH"
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+
+  DEVINVENTORY:
+    Type: "AWS::DynamoDB::Table"
+    Properties:
+      TableName: "dev-inventory"
+      AttributeDefinitions:
+        - AttributeName: "_id"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "_id"
+          KeyType: "HASH"
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+
+  DEVRENTING:
+    Type: "AWS::DynamoDB::Table"
+    Properties:
+      TableName: "dev-renting"
+      AttributeDefinitions:
+        - AttributeName: "_id"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "_id"
+          KeyType: "HASH"
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+
+  DEVRESOURCES:
+    Type: "AWS::DynamoDB::Table"
+    Properties:
+      TableName: "dev-resources"
+      AttributeDefinitions:
+        - AttributeName: "_id"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "_id"
+          KeyType: "HASH"
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
