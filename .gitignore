@@ -1,4 +1,1 @@
-docker-compose.remote.yaml
-create-everything.sh
-delete-everything.sh
-eniconfig-template.yaml
+.env
